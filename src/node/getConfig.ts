@@ -1,5 +1,6 @@
+// @ts-nocheck
+
 import { __get } from '@lotsof/sugar/object';
-import __config from './config.js';
 
 export default function getConfig(path?: string, def?: any): any {
   if (!process.lotsofConfig) {

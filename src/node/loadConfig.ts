@@ -1,11 +1,13 @@
-import __fs from 'fs';
+// @ts-nocheck
+
 import { __packageRootDir } from '@lotsof/sugar/package';
+import __fs from 'fs';
 import __defineConfig from './defineConfig.js';
 import __getConfig from './getConfig.js';
 
 export default async function loadConfig(
   path?: string,
-  def: any,
+  def?: any,
 ): Promise<any> {
   const possibleFiles: string[] = [
     // `${__packageRootDir()}/lotsof.config.ts`,

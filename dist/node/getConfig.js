@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { __get } from '@lotsof/sugar/object';
 export default function getConfig(path, def) {
     var _a, _b, _c;

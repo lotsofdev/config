@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { __deepMerge } from '@lotsof/sugar/object';
 export default function defineConfig(config) {
     var _a;

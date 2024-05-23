@@ -1,3 +1,4 @@
+// @ts-nocheck
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -7,8 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import __fs from 'fs';
 import { __packageRootDir } from '@lotsof/sugar/package';
+import __fs from 'fs';
 import __defineConfig from './defineConfig.js';
 import __getConfig from './getConfig.js';
 export default function loadConfig(path, def) {

@@ -1,4 +1,5 @@
-import __config from './config.js';
+// @ts-nocheck
+
 import { __deepMerge } from '@lotsof/sugar/object';
 
 export default function defineConfig(config: any): any {
