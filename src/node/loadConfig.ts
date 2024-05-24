@@ -32,8 +32,10 @@ export default async function loadConfig(
   // read the config file
   const config = await import(configFilePath).then((mod) => mod.default);
 
-  // set the new config
-  __defineConfig(config);
+  if (config) {
+    // set the new config
+    __defineConfig(config);
+  }
 
   // return the wanted config
   return __getConfig(path, def);
