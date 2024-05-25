@@ -10,8 +10,6 @@ export default function getConfig(path?: string, def?: any): any {
   }
 
   if (path) {
-    console.log(path);
-
     return __get(process.lotsofConfig ?? {}, path) ?? def;
   }
   return process.lotsofConfig ?? {};
